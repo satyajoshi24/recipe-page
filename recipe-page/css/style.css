@@ -1,0 +1,119 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+/* Clear fix hack */
+/* .clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+} */
+
+/* .clear {
+   clear: both;
+} */
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    font-family: "Young Serif", sans-serif;
+    display: flex;
+    justify-content: center;
+    background: hsl(30, 54%, 90%);
+}
+
+p{
+    font-size: 16px;
+    text-align: justify;
+    
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    /* height: 1700px; */
+    background: hsl(0, 0%, 100%);
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-intro img{
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+}
+
+.recipe-intro,.ingredients,.instruction,.nutrition{
+    /* padding: 10px; */
+    margin-bottom: 20px;
+}
+
+.prep-time{
+    background: hsl(330, 100%, 98%);
+    border-radius: 14px;
+    width: auto;
+    height: 125px;
+}
+
+.prep-time span{
+    color: hsl(332, 51%, 32%);
+    margin: 5px 0 0 15px;
+}
+
+.ingredients h2,.instruction h2,.nutrition h2{
+    color: hsl(332, 51%, 32%);
+}
+
+.ingredients{
+    border-bottom: 1px solid black;
+}
+
+.nutrition{
+    margin-bottom: 20px;
+}
+
+.nutrition h2{
+    color: hsl(332, 51%, 32%);
+}
+
+.nutrition p{
+    margin-bottom: 20px;
+}
+
+.instruction{
+    border-bottom: 1px solid black;
+}
+.nutrition-item{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.nutrition-value{
+    color: hsl(332, 51%, 32%);
+}
+
